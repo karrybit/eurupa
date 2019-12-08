@@ -10,15 +10,12 @@ const TextFieldComponent: FC<TextFieldComponentProps> = ({ text, setText }) => {
   return (
     <div>
       <TextField
-        id="filled-textarea"
-        label="Multiline Placeholder"
-        placeholder="Placeholder"
-        multiline
         margin="normal"
-        variant="filled"
+        variant="outlined"
+        multiline={true}
+        fullWidth={true}
         value={text}
         onChange={setText}
-        fullWidth={true}
       />
     </div>
   );

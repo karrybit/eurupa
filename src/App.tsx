@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import TextFieldContainer from "./TextFieldContainer";
 
 const App: React.FC = () => {
