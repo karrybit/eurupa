@@ -1,0 +1,21 @@
+[package]
+name = "pygmaea"
+version = "0.1.0"
+authors = ["makanai5610 <takumi.k.5610@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+console_error_panic_hook = { version = "0.1.6", optional = true }
+wee_alloc = { version = "0.4.5", optional = true }
+
+pygmaea = { git = "https://github.com/makanai5610/pygmaea" }
+
+[profile.release]
+opt-level = "s"

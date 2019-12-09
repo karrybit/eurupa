@@ -8,7 +8,11 @@ const TextFieldContainer: FC = () => {
   const [text, setText] = useTextField("");
   return (
     <div className="container">
-      <TextFieldComponent text={text} setText={setText} />
+      <div className="textControl">
+        <TextFieldComponent text={text} setText={setText} />
+        <button>enter</button>
+        <button>delete</button>
+      </div>
       <p>{text}</p>
     </div>
   );
