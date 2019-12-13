@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { lexize } from "pygmaea/pygmaea_bg";
+import { lexize } from "pygmaea/pygmaea";
 
 const useTextField = (
   initialText: string
